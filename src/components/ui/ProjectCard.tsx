@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -42,53 +42,54 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="stagger-item rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full">
       {screenshots.length > 0 && (
-        <div className="relative aspect-video overflow-hidden bg-gray-100">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <img
-              src={screenshots[currentImageIndex]}
-              alt={`${title} screenshot`}
-              className="w-full h-full object-cover object-top transition-opacity duration-500"
-              loading="lazy"
-            />
-          </div>
+        // <div className="relative aspect-video overflow-hidden bg-gray-100">
+        //   <div className="absolute inset-0 flex items-center justify-center">
+        //     <img
+        //       src={screenshots[currentImageIndex]}
+        //       alt={`${title} screenshot`}
+        //       className="w-full h-full object-cover object-top transition-opacity duration-500"
+        //       loading="lazy"
+        //     />
+        //   </div>
           
-          {screenshots.length > 1 && (
-            <>
-              <button 
-                onClick={goToPrevImage}
-                className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm hover:bg-white transition-colors z-10"
-                aria-label="Previous image"
-              >
-                <ChevronLeft size={16} />
-              </button>
-              <button 
-                onClick={goToNextImage}
-                className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm hover:bg-white transition-colors z-10"
-                aria-label="Next image"
-              >
-                <ChevronRight size={16} />
-              </button>
+        //   {screenshots.length > 1 && (
+        //     <>
+        //       <button 
+        //         onClick={goToPrevImage}
+        //         className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm hover:bg-white transition-colors z-10"
+        //         aria-label="Previous image"
+        //       >
+        //         <ChevronLeft size={16} />
+        //       </button>
+        //       <button 
+        //         onClick={goToNextImage}
+        //         className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm hover:bg-white transition-colors z-10"
+        //         aria-label="Next image"
+        //       >
+        //         <ChevronRight size={16} />
+        //       </button>
               
-              {/* Image indicator */}
-              {screenshots.length > 1 && (
-                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
-                  {screenshots.map((_, idx) => (
-                    <div 
-                      key={idx}
-                      className={`w-1.5 h-1.5 rounded-full transition-colors ${
-                        idx === currentImageIndex ? 'bg-white' : 'bg-white/50'
-                      }`}
-                    />
-                  ))}
-                </div>
-              )}
-            </>
-          )}
-        </div>
+        //       {/* Image indicator */}
+        //       {screenshots.length > 1 && (
+        //         <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+        //           {screenshots.map((_, idx) => (
+        //             <div 
+        //               key={idx}
+        //               className={`w-1.5 h-1.5 rounded-full transition-colors ${
+        //                 idx === currentImageIndex ? 'bg-white' : 'bg-white/50'
+        //               }`}
+        //             />
+        //           ))}
+        //         </div>
+        //       )}
+        //     </>
+        //   )}
+        // </div>
+        <></>
       )}
       
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <h3 className="text-xl text-primary-foreground font-semibold mb-2">{title}</h3>
         <p className="text-muted-foreground mb-4 flex-grow">
           {description}
         </p>

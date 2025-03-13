@@ -1,5 +1,3 @@
-
-
 export const BOOTSTRAP_FOR_SKILL_ICON = "w-12 text-4xl mx-auto inline-block";
 export const RESUME_LINK =
   "https://drive.google.com/file/d/1uwWgrqgIjCuN4r6rSMhqZGJHbBSwQPc7/view?usp=sharing";
@@ -25,55 +23,79 @@ const data = {
     companies: [
       {
         name: "Youe",
-        description:
-          "Revamped the React Native app, driving Youe's first revenue, and migrated its backend to reduce load times by 50%, using React Native and Next.js.",
+        description: [
+          "Revamped the React Native app, driving Youe's first revenue, and migrated its backend to reduce load times by 50%, using React Native and Next.js."
+        ],
         tenure: "Nov 2024 - Present",
         websiteLink: "https://youe.co/",
       },
       {
         name: "Patent Ninja",
-        description:
-          "Patent Ninja is a tool I built from scratch to make the patent filing process fast and simple. It guides users through the entire process, enabling them to create a fully detailed patent in just around 10 minutes. I also integrated features like Patent Search and Patent Response, which help users quickly look up and validate patents on the go. For security and convenience, I added Google and email link authentication using Firebase. The platform runs on Next.js for the front end and AWS Amplify to manage the backend, making it a reliable and efficient solution for patent filing.",
+        description: [
+          "Patent Ninja is a tool I built from scratch to make the patent filing process fast and simple.",
+          "It guides users through the entire process, enabling them to create a fully detailed patent in just around 10 minutes.",
+          "I also integrated features like Patent Search and Patent Response, which help users quickly look up and validate patents on the go.",
+          "For security and convenience, I added Google and email link authentication using Firebase.",
+          "The platform runs on Next.js for the front end and AWS Amplify to manage the backend, making it a reliable and efficient solution for patent filing."
+        ],
         tenure: "Mar 2024 - Present",
         websiteLink: "https://app.dev.patent.ninja/",
       },
       {
         name: "Ventura Securities",
-        description:
-          "I developed server-side mutual fund sections using React Server Components, utilizing Next.js as the primary tech stack. This implementation optimized the rendering process, enabling efficient data fetching and improving performance for complex financial data displays.",
+        description: [
+          "I developed server-side mutual fund sections using React Server Components, utilizing Next.js as the primary tech stack.",
+          "This implementation optimized the rendering process, enabling efficient data fetching and improving performance for complex financial data displays."
+        ],
         tenure: "Aug 2024 - Sept 2024",
         websiteLink: "https://www.venturasecurities.com/",
       },
       {
         name: "Hiretal",
-        description:
-          "Developed a robust TypeScript and Express backend architecture, significantly optimizing Elasticsearch queries to achieve a 100-fold increase in speed. Additionally, I streamlined the deployment process on Digital Ocean by utilizing Docker, complemented with efficient build scripts. To further enhance system performance, I implemented caching mechanisms on both the frontend and backend, resulting in a remarkable 10 times faster response time. The working tech stack for this project included Next.js, Node.js, and Elasticsearch.",
+        description: [
+          "Developed a robust TypeScript and Express backend architecture, significantly optimizing Elasticsearch queries to achieve a 100-fold increase in speed.",
+          "Additionally, I streamlined the deployment process on Digital Ocean by utilizing Docker, complemented with efficient build scripts.",
+          "To further enhance system performance, I implemented caching mechanisms on both the frontend and backend, resulting in a remarkable 10 times faster response time.",
+          "The working tech stack for this project included Next.js, Node.js, and Elasticsearch."
+        ],
         tenure: "Aug 2023 - May 2024",
         websiteLink: "https://hiretal.ai/",
       },
       {
         name: "Bluelearn",
-        description:
-          "Developed an Application Review System (ARS) and an Application Tracking System (ATS) designed for tracking and managing job applications on the web, which successfully supported over 250,000 users. Additionally, I built Boldd from scratch, which successfully generated multiple leads in India and the US, subsequently generating revenue. I also undertook the revamping of the Admin Panel to version 3, enhancing the ability to manage and monitor content on the app. Throughout these projects, I worked with a tech stack that included Next.js, React Query, and Node.js.",
+        description: [
+          "Developed an Application Review System (ARS) and an Application Tracking System (ATS) designed for tracking and managing job applications on the web, which successfully supported over 250,000 users.",
+          "Additionally, I built Boldd from scratch, which successfully generated multiple leads in India and the US, subsequently generating revenue.",
+          "I also undertook the revamping of the Admin Panel to version 3, enhancing the ability to manage and monitor content on the app.",
+          "Throughout these projects, I worked with a tech stack that included Next.js, React Query, and Node.js."
+        ],
         tenure: "June 2023 - June 2024",
         websiteLink: "https://www.bluelearn.in/",
       },
       {
         name: "Matrimonials",
-        description: `Improved application robustness by solving multiple bugs, added DOM to PDF generation, and integrated search filters, utilizing React.js, Node.js, EC2, and MongoDB.`,
+        description: [
+          "Improved application robustness by solving multiple bugs, added DOM to PDF generation, and integrated search filters, utilizing React.js, Node.js, EC2, and MongoDB"
+        ],
         tenure: "June 2023 - July 2023 (Freelance - Full Stack Developer)",
         websiteLink: "https://www.matrimonials.ai/",
       },
       {
         name: "Intelligent Labs",
-        description: `Developed a company collaboration platform from scratch, working closely with the founders to brainstorm the app flow. Took responsibility for the entire user journey, including user onboarding, authentication, search, feed, and profile. Implemented a Node.js backend using the MVC architecture, incorporating JWT authentication. Successfully built a dynamic feed page and search functionality that updates in real-time with new posts.`,
+        description: [
+          "Developed a company collaboration platform from scratch, working closely with the founders to brainstorm the app flow.",
+          "Took responsibility for the entire user journey, including user onboarding, authentication, search, feed, and profile.",
+          "Implemented a Node.js backend using the MVC architecture, incorporating JWT authentication.",
+          "Successfully built a dynamic feed page and search functionality that updates in real-time with new posts."
+        ],
         tenure: "April 2023 (Full Stack Developer Intern)",
         websiteLink: "https://reacti.ai/",
       },
       {
         name: "Slingshot",
-        description:
-          "Part of the new ventures and collaborated with founders, teaching Node.js, achieving 10,000+ hits on EaseIt, creating Node.js bots, building data crawlers, and deploying apps using Docker and AWS EC2.",
+        description: [
+          "Part of the new ventures and collaborated with founders, teaching Node.js, achieving 10,000+ hits on EaseIt, creating Node.js bots, building data crawlers, and deploying apps using Docker and AWS EC2"
+        ],
         tenure: "Nov 2022 - Feb 2023 (4 months) (SDE Intern)",
         websiteLink: "https://slingshotahead.com/",
       },
@@ -84,10 +106,10 @@ const data = {
       skillName: "React Native",
     },
     {
-      skillName:'PostgreSQL'
+      skillName: "PostgreSQL"
     },
     {
-      skillName: 'RDS'
+      skillName: "RDS"
     },
     {
       skillName: "NextJS",
@@ -127,7 +149,7 @@ const data = {
       title: "Typu",
       description:
         "A simple tool to generate TypeScript types from cURL commands.",
-      tags: ["react", "tailwindcss", 'typescript'],
+      tags: ["react", "tailwindcss", "typescript"],
       codeLink: "https://github.com/thisisyashgarg/typu",
       websiteLink: "https://typu.vercel.app/",
       screenshots: [

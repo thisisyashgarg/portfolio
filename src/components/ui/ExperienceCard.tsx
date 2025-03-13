@@ -1,10 +1,9 @@
-
 import React from "react";
 import { ExternalLink } from "lucide-react";
 
 interface ExperienceCardProps {
   name: string;
-  description: string;
+  description: string[];
   tenure: string;
   websiteLink: string;
   index: number;
@@ -37,10 +36,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
             <ExternalLink size={18} />
           </a>
         </div>
-        
-        <p className="text-muted-foreground flex-grow">
-          {description}
-        </p>
+        <ul className="list-disc pl-4 text-muted-foreground flex-grow">
+          {description.map((point, idx) => (
+            <li key={idx}>{point}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ const Navbar = () => {
     >
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex justify-between items-center">
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <a 
               href="#hero" 
               className="text-lg font-medium tracking-tight hover:opacity-80 transition-opacity"
@@ -43,9 +43,10 @@ const Navbar = () => {
                 handleNavClick("hero");
               }}
             >
-              {data.name}
+              Home
             </a>
-          </div>
+          </div> */}
+          <div></div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

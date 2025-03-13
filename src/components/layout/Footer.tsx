@@ -56,11 +56,11 @@ const Footer = () => {
             <div className="space-y-4">
               <h4 className="text-sm font-medium uppercase tracking-wider">Navigation</h4>
               <div className="flex flex-col space-y-2 text-sm text-muted-foreground">
-                <a href="#about" className="hover:text-primary transition-colors">About</a>
+                {/* <a href="#about" className="hover:text-primary transition-colors">About</a> */}
                 <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
                 <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
                 <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
-                <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+                {/* <a href="#contact" className="hover:text-primary transition-colors">Contact</a> */}
               </div>
             </div>
             

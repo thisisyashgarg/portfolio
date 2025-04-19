@@ -89,8 +89,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       )}
       
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl text-primary-foreground font-semibold mb-2">{title}</h3>
-        <p className="text-muted-foreground mb-4 flex-grow">
+        <h3 className="select-none text-xl text-primary-foreground font-semibold mb-2">{title}</h3>
+        <p className="select-none text-muted-foreground mb-4 flex-grow">
           {description}
         </p>
         

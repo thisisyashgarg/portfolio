@@ -5,9 +5,12 @@ const Contact = () => {
     <section id="contact" className="py-24 bg-gradient-to-b from-background to-secondary/20">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16 reveal">
-          <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2 font-medium">
+          <a
+          
+           href="mailto:thisisyashgarg@gmail.com"
+          className="text-sm uppercase tracking-wider text-muted-foreground mb-2 font-medium">
             Get in Touch
-          </p>
+          </a>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
             Let's work together
           </h2>

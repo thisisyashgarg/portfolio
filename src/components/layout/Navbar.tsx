@@ -6,15 +6,17 @@ import { Github, Linkedin, Twitter, Mail, Menu, X, Download } from "lucide-react
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isMenuOpen]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -27,9 +29,7 @@ const Navbar = () => {
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? "py-3 bg-background/80 backdrop-blur-md shadow-sm" 
-          : "py-5 bg-transparent"
+         "py-5 bg-transparent"
       }`}
     >
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -112,11 +112,11 @@ const Navbar = () => {
       `}>
         <div className="flex flex-col h-full justify-center items-center space-y-8 p-6">
           <a 
-            href="#about" 
+            href="#hero" 
             className="text-lg font-medium"
             onClick={(e) => {
               e.preventDefault();
-              handleNavClick("about");
+              handleNavClick("hero");
             }}
           >
             About
@@ -151,16 +151,7 @@ const Navbar = () => {
           >
             Projects
           </a>
-          <a 
-            href="#contact" 
-            className="text-lg font-medium"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick("contact");
-            }}
-          >
-            Contact
-          </a>
+         
           <a 
             href={RESUME_LINK}
             target="_blank"

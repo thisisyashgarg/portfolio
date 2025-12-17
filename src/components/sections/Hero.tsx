@@ -33,12 +33,12 @@ const Hero = () => {
             </p> */}
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-              <a
+              {/* <a
                 href="mailto:thisisyashgarg@gmail.com"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium transition-transform hover:translate-y-[-2px] active:translate-y-[0px]"
               >
                 Get in touch
-              </a>
+              </a> */}
               <a
                 href={RESUME_LINK}
                 target="_blank"

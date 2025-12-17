@@ -24,9 +24,10 @@ const data = {
       {
         name: "Youe",
         description: [
-          "Revamped the React Native app, driving Youe's first revenue, and migrated its backend to reduce load times by 50%, using React Native and Next.js."
+          "Revamped the React Native app, driving Youe's first revenue, and migrated its backend to reduce load times by 50%, using React Native and Next.js.",
+          "Migrated the mobile app to a new backend decreasing load times by half."
         ],
-        tenure: "Nov 2024 - Present",
+        tenure: "Nov 2024 - Sept 2025",
         websiteLink: "https://youe.co/",
       },
       {
@@ -38,7 +39,7 @@ const data = {
           "For security and convenience, I added Google and email link authentication using Firebase.",
           "The platform runs on Next.js for the front end and AWS Amplify to manage the backend, making it a reliable and efficient solution for patent filing."
         ],
-        tenure: "Mar 2024 - Present",
+        tenure: "Mar 2024 - Oct 2024",
         websiteLink: "https://app.dev.patent.ninja/",
       },
       {

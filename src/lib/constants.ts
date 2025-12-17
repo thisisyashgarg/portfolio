@@ -1,6 +1,6 @@
 export const BOOTSTRAP_FOR_SKILL_ICON = "w-12 text-4xl mx-auto inline-block";
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1uwWgrqgIjCuN4r6rSMhqZGJHbBSwQPc7/view?usp=sharing";
+  "https://thisisyashgarg.github.io/resume.pdf";
 export const PROFILE_PIC =
   "https://res.cloudinary.com/dwwtffefs/image/upload/v1677576649/my-profile-pic/profile_ozrf3u.png";
 

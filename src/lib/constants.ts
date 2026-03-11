@@ -22,10 +22,22 @@ const data = {
     title: "My Experience",
     companies: [
       {
+        name: "ZZAZZ",
+        description: [
+          "Integrated AMP-compatible pricing signal across repos using AMP-script, SHA-256 hashing, DOM injections, amp-analytics for tracking, and multi-publisher templates (LiveMint, Hindustan Times).",
+          "Developed Chrome extension (Manifest V3) for Ground News/Bing News augmentation via NewsScraper with URL batch pricing and DOM badge injections.",
+          "Contributed to TTS-integrated content creation tool; processed alignment JSON leveraging ElevenLabs for speech synthesis; implemented O(1) time complexity word lookup using a time-bucket algorithm for efficient timestamp-to-word mapping.",
+        ],
+        tenure: "Sept 2025 - Present",
+        websiteLink: "https://zzazz.com/",
+      },
+      {
         name: "Youe",
         description: [
-          "Revamped the React Native app, driving Youe's first revenue, and migrated its backend to reduce load times by 50%, using React Native and Next.js.",
-          "Migrated the mobile app to a new backend decreasing load times by half."
+          "Revamped the React Native mobile app, architecting core user flows (onboarding, AI chat, roadmap, payments) that enabled Youe to generate its first revenue through in-app subscriptions.",
+          "Built full subscription system using RevenueCat, implementing pricing displays, payment modals, discounted products, and subscription validation to support monetization.",
+          "Migrated the mobile app to a new API v3 backend, building a TypeScript API client with robust error handling and caching, reducing app load times by ~50% and improving data reliability.",
+          "Developed scalable frontend architecture using React Native, Next.js, and Zustand, shipping 20+ screens and 100+ reusable UI components with Mixpanel and PostHog analytics.",
         ],
         tenure: "Nov 2024 - Sept 2025",
         websiteLink: "https://youe.co/",
@@ -54,10 +66,10 @@ const data = {
       {
         name: "Hiretal",
         description: [
-          "Developed a robust TypeScript and Express backend architecture, significantly optimizing Elasticsearch queries to achieve a 100-fold increase in speed.",
-          "Additionally, I streamlined the deployment process on Digital Ocean by utilizing Docker, complemented with efficient build scripts.",
-          "To further enhance system performance, I implemented caching mechanisms on both the frontend and backend, resulting in a remarkable 10 times faster response time.",
-          "The working tech stack for this project included Next.js, Node.js, and Elasticsearch."
+          "Built full-stack B2B talent-sourcing SaaS using Next.js 14, React 18, TypeScript, Express.js, TypeORM, and PostgreSQL — enabling recruiters to search, collect, enrich, and manage candidate profiles at scale.",
+          "Designed composable Elasticsearch query engine (20+ methods) translating 30+ recruiter filters into PDL ES DSL queries with must-have/any-of boolean logic, exclusions, and current-vs-previous experience scoping.",
+          "Built iterative filter-refinement algorithm that progressively relaxes over-constrained searches by priority-ranked filter removal, improving search hit-rate and surfacing optimization feedback.",
+          "Integrated People Data Labs API for candidate collection and bulk/single enrichment — hydrating profiles with emails, phone numbers, URLs, certifications, and work histories; built credit-based usage-metering system.",
         ],
         tenure: "Aug 2023 - May 2024",
         websiteLink: "https://hiretal.ai/",
@@ -65,12 +77,12 @@ const data = {
       {
         name: "Bluelearn",
         description: [
-          "Developed an Application Review System (ARS) and an Application Tracking System (ATS) designed for tracking and managing job applications on the web, which successfully supported over 250,000 users.",
-          "Additionally, I built Boldd from scratch, which successfully generated multiple leads in India and the US, subsequently generating revenue.",
-          "I also undertook the revamping of the Admin Panel to version 3, enhancing the ability to manage and monitor content on the app.",
-          "Throughout these projects, I worked with a tech stack that included Next.js, React Query, and Node.js."
+          "Architected and shipped Application Review System (ARS) and Application Tracking System (ATS) with cursor-based infinite scroll, multi-criteria filtering, URL-synced query params, and geolocation filtering, reducing initial DOM rendering by 80%+.",
+          "Built Boldd (now Turtle) and Design Club Pro from scratch, including DCP Dashboard with onboarding, event rescheduling, star-project submissions, and 8+ React Query API integrations — generating leads and contributing to the company earning its first revenue.",
+          "Engineered BL Work marketplace with custom swipeable carousel, Zod-validated filter modals, location auto-detection, and complete job application flow with apply, withdraw, and email triggers.",
+          "Built modular component library with form controls, custom toast system, collapsible sidebar with Framer Motion, and drag-and-drop proof-of-work reordering — standardizing UX across 15+ forms and feature verticals.",
         ],
-        tenure: "June 2023 - June 2024",
+        tenure: "June 2023 - May 2024",
         websiteLink: "https://www.bluelearn.in/",
       },
       // {

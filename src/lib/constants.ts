@@ -115,15 +115,15 @@ const data = {
     ],
   },
   skills: [
-    // {
-    //   skillName: "React Native",
-    // },
+    // Core Language
     {
-      skillName: "PostgreSQL"
+      skillName: "Typescript",
+      skillIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png",
     },
-    {
-      skillName: "RDS"
+     {
+      skillName: "Javascript",
     },
+    // Frontend Frameworks
     {
       skillName: "NextJS",
       skillIcon: "https://res.cloudinary.com/dwwtffefs/image/upload/v1689799688/next-js_wcrebp.svg",
@@ -133,29 +133,60 @@ const data = {
       skillIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
     },
     {
+      skillName: "React Native",
+    },
+    {
+      skillName: "TailwindCSS",
+      skillIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
+    },
+    // Backend
+    {
       skillName: "NodeJS",
       skillIcon: "https://cdn.cdnlogo.com/logos/n/94/nodejs-icon.svg",
+    },
+    // State & Data Fetching
+    {
+      skillName: "React Query"
+    },
+    {
+      skillName: "Zustand"
+    },
+    {
+      skillName: "Redux Toolkit"
+    },
+    // Databases
+    {
+      skillName: "PostgreSQL"
     },
     {
       skillName: "MongoDB",
       skillIcon: "https://cdn.cdnlogo.com/logos/m/30/mongodb-icon.svg",
     },
     {
+      skillName: "Elasticsearch"
+    },
+    {
+      skillName: "Firebase"
+    },
+    {
+      skillName: "Mongoose"
+    },
+    // Cloud & DevOps
+    {
       skillName: "EC2 (AWS)",
       skillIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
+    },
+    {
+      skillName: "RDS"
     },
     {
       skillName: "Docker",
       skillIcon: "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
     },
+    // UI Libraries
     {
-      skillName: "Typescript",
-      skillIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png",
+      skillName: "Framer Motion"
     },
-    {
-      skillName: "TailwindCSS",
-      skillIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
-    }
   ],
   projects: [
     {

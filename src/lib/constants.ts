@@ -28,7 +28,7 @@ const data = {
           "Developed Chrome extension (Manifest V3) for Ground News/Bing News augmentation via NewsScraper with URL batch pricing and DOM badge injections.",
           "Contributed to TTS-integrated content creation tool; processed alignment JSON leveraging ElevenLabs for speech synthesis; implemented O(1) time complexity word lookup using a time-bucket algorithm for efficient timestamp-to-word mapping.",
         ],
-        tenure: "Sept 2025 - Present",
+        tenure: "Sept 2025 - March 2026",
         websiteLink: "https://zzazz.com/",
       },
       {

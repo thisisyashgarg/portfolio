@@ -140,9 +140,6 @@ const data = {
       tags: ["react", "tailwindcss", "typescript"],
       codeLink: "https://github.com/thisisyashgarg/typu",
       websiteLink: "https://typu.vercel.app/",
-      screenshots: [
-        "https://res.cloudinary.com/dwwtffefs/image/upload/v1728134691/Screenshot_2024-10-05_at_6.51.44_PM_iek2ah.png",
-      ],
     },
     {
       title: "Haunted Attic",
@@ -151,7 +148,6 @@ const data = {
       codeLink: "",
       websiteLink: "https://github.com/thisisyashgarg/two-keys-releases/releases/latest",
       websiteLabel: "Download",
-      screenshots: [],
     },
     {
       title: "Uber Expense Automation",
@@ -159,7 +155,6 @@ const data = {
       tags: ["python", "streamlit", "google-sheets-api"],
       codeLink: "https://github.com/thisisyashgarg/expense-sheet-creator",
       websiteLink: "https://uber-expense-tracker.streamlit.app/",
-      screenshots: [],
     },
     // {
     //   title: "UnQueue",

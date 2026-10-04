@@ -1,4 +1,3 @@
-export const BOOTSTRAP_FOR_SKILL_ICON = "w-12 text-4xl mx-auto inline-block";
 export const RESUME_LINK =
   "https://thisisyashgarg.github.io/resume.pdf";
 export const PROFILE_PIC =
@@ -23,6 +22,7 @@ const data = {
     companies: [
       {
         name: "ZZAZZ",
+        role: "Software Engineer",
         description: [
           "Integrated AMP-compatible pricing signal across repos using AMP-script, SHA-256 hashing, DOM injections, amp-analytics for tracking, and multi-publisher templates (LiveMint, Hindustan Times).",
           "Developed Chrome extension (Manifest V3) for Ground News/Bing News augmentation via NewsScraper with URL batch pricing and DOM badge injections.",
@@ -33,6 +33,7 @@ const data = {
       },
       {
         name: "Youe",
+        role: "Frontend Engineer",
         description: [
           "Revamped the React Native mobile app, architecting core user flows (onboarding, AI chat, roadmap, payments) that enabled Youe to generate its first revenue through in-app subscriptions.",
           "Built full subscription system using RevenueCat, implementing pricing displays, payment modals, discounted products, and subscription validation to support monetization.",
@@ -65,22 +66,24 @@ const data = {
       // },
       {
         name: "Hiretal",
+        role: "Full Stack Engineer (Freelance)",
         description: [
-          "Built full-stack B2B talent-sourcing SaaS using Next.js 14, React 18, TypeScript, Express.js, TypeORM, and PostgreSQL — enabling recruiters to search, collect, enrich, and manage candidate profiles at scale.",
+          "Built full-stack B2B talent-sourcing SaaS using Next.js 14, React 18, TypeScript, Express.js, TypeORM, and PostgreSQL, enabling recruiters to search, collect, enrich, and manage candidate profiles at scale.",
           "Designed composable Elasticsearch query engine (20+ methods) translating 30+ recruiter filters into PDL ES DSL queries with must-have/any-of boolean logic, exclusions, and current-vs-previous experience scoping.",
           "Built iterative filter-refinement algorithm that progressively relaxes over-constrained searches by priority-ranked filter removal, improving search hit-rate and surfacing optimization feedback.",
-          "Integrated People Data Labs API for candidate collection and bulk/single enrichment — hydrating profiles with emails, phone numbers, URLs, certifications, and work histories; built credit-based usage-metering system.",
+          "Integrated People Data Labs API for candidate collection and bulk/single enrichment, hydrating profiles with emails, phone numbers, URLs, certifications, and work histories; built credit-based usage-metering system.",
         ],
         tenure: "Aug 2023 - May 2024",
         websiteLink: "https://hiretal.ai/",
       },
       {
         name: "Bluelearn",
+        role: "React Developer Intern",
         description: [
           "Architected and shipped Application Review System (ARS) and Application Tracking System (ATS) with cursor-based infinite scroll, multi-criteria filtering, URL-synced query params, and geolocation filtering, reducing initial DOM rendering by 80%+.",
-          "Built Boldd (now Turtle) and Design Club Pro from scratch, including DCP Dashboard with onboarding, event rescheduling, star-project submissions, and 8+ React Query API integrations — generating leads and contributing to the company earning its first revenue.",
+          "Built Boldd (now Turtle) and Design Club Pro from scratch, including DCP Dashboard with onboarding, event rescheduling, star-project submissions, and 8+ React Query API integrations, generating leads and contributing to the company earning its first revenue.",
           "Engineered BL Work marketplace with custom swipeable carousel, Zod-validated filter modals, location auto-detection, and complete job application flow with apply, withdraw, and email triggers.",
-          "Built modular component library with form controls, custom toast system, collapsible sidebar with Framer Motion, and drag-and-drop proof-of-work reordering — standardizing UX across 15+ forms and feature verticals.",
+          "Built modular component library with form controls, custom toast system, collapsible sidebar with Framer Motion, and drag-and-drop proof-of-work reordering, standardizing UX across 15+ forms and feature verticals.",
         ],
         tenure: "June 2023 - May 2024",
         websiteLink: "https://www.bluelearn.in/",
@@ -106,87 +109,28 @@ const data = {
       // },
       {
         name: "Slingshot",
+        role: "SDE Intern",
         description: [
           "Part of the new ventures and collaborated with founders, teaching Node.js, achieving 10,000+ hits on EaseIt, creating Node.js bots, building data crawlers, and deploying apps using Docker and AWS EC2"
         ],
-        tenure: "Nov 2022 - Feb 2023 (4 months) (SDE Intern)",
+        tenure: "Nov 2022 - Feb 2023",
         websiteLink: "https://slingshotahead.com/",
       },
     ],
   },
+  education: {
+    degree: "B.Tech, Information Technology",
+    school: "Maharaja Agrasen Institute of Technology, Delhi",
+    years: "2020 - 2024",
+  },
+  awards: ["Finalist, Smart India Hackathon 2022"],
   skills: [
-    // Core Language
-    {
-      skillName: "Typescript",
-      skillIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png",
-    },
-     {
-      skillName: "Javascript",
-    },
-    // Frontend Frameworks
-    {
-      skillName: "NextJS",
-      skillIcon: "https://res.cloudinary.com/dwwtffefs/image/upload/v1689799688/next-js_wcrebp.svg",
-    },
-    {
-      skillName: "ReactJS",
-      skillIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
-    },
-    {
-      skillName: "React Native",
-    },
-    {
-      skillName: "TailwindCSS",
-      skillIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
-    },
-    // Backend
-    {
-      skillName: "NodeJS",
-      skillIcon: "https://cdn.cdnlogo.com/logos/n/94/nodejs-icon.svg",
-    },
-    // State & Data Fetching
-    {
-      skillName: "React Query"
-    },
-    {
-      skillName: "Zustand"
-    },
-    {
-      skillName: "Redux Toolkit"
-    },
-    // Databases
-    {
-      skillName: "PostgreSQL"
-    },
-    {
-      skillName: "MongoDB",
-      skillIcon: "https://cdn.cdnlogo.com/logos/m/30/mongodb-icon.svg",
-    },
-    {
-      skillName: "Elasticsearch"
-    },
-    {
-      skillName: "Firebase"
-    },
-    {
-      skillName: "Mongoose"
-    },
-    // Cloud & DevOps
-    {
-      skillName: "EC2 (AWS)",
-      skillIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png",
-    },
-    {
-      skillName: "RDS"
-    },
-    {
-      skillName: "Docker",
-      skillIcon: "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
-    },
-    // UI Libraries
-    {
-      skillName: "Framer Motion"
-    },
+    { group: "Frontend", items: ["Next.js", "React", "React Native", "Tailwind CSS", "Framer Motion", "React Hook Form", "Zod"] },
+    { group: "Languages & backend", items: ["TypeScript", "JavaScript", "Python", "Node.js", "Express"] },
+    { group: "State & data fetching", items: ["React Query", "Zustand", "Redux Toolkit"] },
+    { group: "Databases", items: ["PostgreSQL", "MongoDB", "Elasticsearch", "Firebase", "TypeORM", "Mongoose"] },
+    { group: "Cloud", items: ["AWS EC2", "RDS", "S3", "Amplify", "Docker"] },
+    { group: "Charts & analytics", items: ["D3", "Recharts", "ECharts", "Highcharts", "Mixpanel", "PostHog"] },
   ],
   projects: [
     {
@@ -199,6 +143,23 @@ const data = {
       screenshots: [
         "https://res.cloudinary.com/dwwtffefs/image/upload/v1728134691/Screenshot_2024-10-05_at_6.51.44_PM_iek2ah.png",
       ],
+    },
+    {
+      title: "Haunted Attic",
+      description: "A two-player online escape room for macOS and Windows. Two computers, one voice call, one way out.",
+      tags: ["game", "multiplayer"],
+      codeLink: "",
+      websiteLink: "https://github.com/thisisyashgarg/two-keys-releases/releases/latest",
+      websiteLabel: "Download",
+      screenshots: [],
+    },
+    {
+      title: "Uber Expense Automation",
+      description: "Extracts expense data from Uber receipt PDFs into CSV or Google Sheets, with a Streamlit UI and a cron sync from Google Drive.",
+      tags: ["python", "streamlit", "google-sheets-api"],
+      codeLink: "https://github.com/thisisyashgarg/expense-sheet-creator",
+      websiteLink: "https://uber-expense-tracker.streamlit.app/",
+      screenshots: [],
     },
     // {
     //   title: "UnQueue",
@@ -244,18 +205,6 @@ const data = {
     //     "https://res.cloudinary.com/dwwtffefs/image/upload/v1680374550/youtube-clone/Screenshot_Capture_-_2023-03-17_-_23-14-41_jqa6fd.png",
     //   ],
     // },
-    {
-      title: "Cryptologer",
-      description:
-        "This is a tweeter bot that automatically fetches crypto news from an API and then generates commentary tweet about it and tweets that commentary through your twitter account",
-      tags: ["xml-js", "twit", "openai", "newsdata-api"],
-      codeLink: "https://github.com/thisisyashgarg/news-tweeter-bot",
-      websiteLink:
-        "https://twitter.com/IAmCryptologer?t=Rv_xgKBcUDbNc1lbUrBjhw&s=09",
-      screenshots: [
-        "https://res.cloudinary.com/dwwtffefs/image/upload/v1677303411/news-bot/Screenshot_Capture_-_2023-02-25_-_11-06-38_kvcpnu.png",
-      ],
-    },
     // {
     //   title: "Book Management API ( with Swagger Docs)",
     //   description: "A simple API for book management",
@@ -266,17 +215,6 @@ const data = {
     //     "https://res.cloudinary.com/dwwtffefs/image/upload/v1680375357/books-api/Screenshot_Capture_-_2023-04-02_-_00-25-09_xnsdo8.png",
     //   ],
     // },
-    {
-      title: "Meme Generator",
-      description:
-        "This is a meme generator that generates a random meme template and takes input text, dynamically adds it to a meme. You can download the meme as well. Have fun with it.",
-      tags: ["react", "typescript", "html2canvas", "download-js"],
-      codeLink: "https://github.com/thisisyashgarg/meme-generator",
-      websiteLink: "https://creatememes.netlify.app/",
-      screenshots: [
-        "https://res.cloudinary.com/dwwtffefs/image/upload/v1677136172/meme-generator/Screenshot_Capture_-_2023-02-23_-_12-38-21_tmrqke.png",
-      ],
-    },
     // {
     //   title: "FooBank - Modern Banking Website",
     //   description:
@@ -305,26 +243,6 @@ const data = {
     //     "https://res.cloudinary.com/dwwtffefs/image/upload/v1679938405/tenzies/Screenshot_Capture_-_2023-03-27_-_23-03-08_putehk.png",
     //   ],
     // },
-    {
-      title: "Discord Tweeter Bot",
-      description:
-        "Discord Tweeter Bot is a discord bot that basically takes your input, a tweet of yours that you want to post, and directly posts it through your twitter profile",
-      tags: ["twit", "discord-js", "nodejs", "twitter-apiV2"],
-      codeLink: "https://github.com/thisisyashgarg/discord-tweeter-bot",
-      websiteLink: "",
-      screenshots: [
-        "https://res.cloudinary.com/dwwtffefs/image/upload/v1677137451/discord-bot/Screenshot_Capture_-_2023-02-23_-_12-59-59_cci6qa.png",
-      ],
-    },
-    {
-      title: "NodeJS Crawler",
-      description:
-        "A Nodejs crawler that crawls a government website and takes out data of latest tenders passed along with their dates and contractor (if any)",
-      tags: ["nodejs", "puppeteer", "headless-browser"],
-      codeLink: "https://github.com/thisisyashgarg/nodejs-crawler",
-      websiteLink: "",
-      screenshots: [],
-    },
   ],
 };
 

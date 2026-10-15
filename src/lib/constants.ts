@@ -21,6 +21,18 @@ const data = {
     title: "My Experience",
     companies: [
       {
+        name: "Clinsight AI",
+        role: "Lead Engineer",
+        description: [
+          "Building ClinAds, an AI marketing platform for healthcare clinics, across a Next.js frontend and an Express, Prisma and Zod backend deployed on Cloudflare.",
+          "Shipped AI ad generation, website analysis, AI visibility tracking across ChatGPT, Claude and Gemini, competitor analysis, and a credit-metered customer API with OpenAPI docs.",
+          "Built a standalone blog-generation pipeline and content-engine dashboard powering an SEO network of 10+ clinic directory and niche sites.",
+          "Wrote a 24/7 multi-site auto-indexer for Google's Indexing API covering ~615k URLs, with PostHog analytics and Sentry monitoring across services.",
+        ],
+        tenure: "May 2026 - Present",
+        websiteLink: "https://clinsight.ai/",
+      },
+      {
         name: "ZZAZZ",
         role: "Software Engineer",
         description: [
@@ -45,6 +57,7 @@ const data = {
       },
       {
         name: "Patent Ninja",
+        role: "Frontend Engineer (Part-time)",
         description: [
           "Patent Ninja is a tool I built from scratch to make the patent filing process fast and simple.",
           "It guides users through the entire process, enabling them to create a fully detailed patent in just around 10 minutes.",
@@ -55,18 +68,9 @@ const data = {
         tenure: "Mar 2024 - Oct 2024",
         websiteLink: "https://app.dev.patent.ninja/",
       },
-      // {
-      //   name: "Ventura Securities",
-      //   description: [
-      //     "I developed server-side mutual fund sections using React Server Components, utilizing Next.js as the primary tech stack.",
-      //     "This implementation optimized the rendering process, enabling efficient data fetching and improving performance for complex financial data displays."
-      //   ],
-      //   tenure: "Aug 2024 - Sept 2024",
-      //   websiteLink: "https://www.venturasecurities.com/",
-      // },
       {
         name: "Hiretal",
-        role: "Full Stack Engineer (Freelance)",
+        role: "Full Stack Engineer (Part-time)",
         description: [
           "Built full-stack B2B talent-sourcing SaaS using Next.js 14, React 18, TypeScript, Express.js, TypeORM, and PostgreSQL, enabling recruiters to search, collect, enrich, and manage candidate profiles at scale.",
           "Designed composable Elasticsearch query engine (20+ methods) translating 30+ recruiter filters into PDL ES DSL queries with must-have/any-of boolean logic, exclusions, and current-vs-previous experience scoping.",
@@ -78,7 +82,7 @@ const data = {
       },
       {
         name: "Bluelearn",
-        role: "React Developer Intern",
+        role: "Frontend Developer Intern",
         description: [
           "Architected and shipped Application Review System (ARS) and Application Tracking System (ATS) with cursor-based infinite scroll, multi-criteria filtering, URL-synced query params, and geolocation filtering, reducing initial DOM rendering by 80%+.",
           "Built Boldd (now Turtle) and Design Club Pro from scratch, including DCP Dashboard with onboarding, event rescheduling, star-project submissions, and 8+ React Query API integrations, generating leads and contributing to the company earning its first revenue.",
@@ -88,14 +92,6 @@ const data = {
         tenure: "June 2023 - May 2024",
         websiteLink: "https://www.bluelearn.in/",
       },
-      // {
-      //   name: "Matrimonials",
-      //   description: [
-      //     "Improved application robustness by solving multiple bugs, added DOM to PDF generation, and integrated search filters, utilizing React.js, Node.js, EC2, and MongoDB"
-      //   ],
-      //   tenure: "June 2023 - July 2023 (Freelance - Full Stack Developer)",
-      //   websiteLink: "https://www.matrimonials.ai/",
-      // },
       // {
       //   name: "Intelligent Labs",
       //   description: [
@@ -107,15 +103,15 @@ const data = {
       //   tenure: "April 2023 (Full Stack Developer Intern)",
       //   websiteLink: "https://reacti.ai/",
       // },
-      {
-        name: "Slingshot",
-        role: "SDE Intern",
-        description: [
-          "Part of the new ventures and collaborated with founders, teaching Node.js, achieving 10,000+ hits on EaseIt, creating Node.js bots, building data crawlers, and deploying apps using Docker and AWS EC2"
-        ],
-        tenure: "Nov 2022 - Feb 2023",
-        websiteLink: "https://slingshotahead.com/",
-      },
+      // {
+      //   name: "Slingshot",
+      //   role: "SDE Intern",
+      //   description: [
+      //     "Part of the new ventures and collaborated with founders, teaching Node.js, achieving 10,000+ hits on EaseIt, creating Node.js bots, building data crawlers, and deploying apps using Docker and AWS EC2"
+      //   ],
+      //   tenure: "Nov 2022 - Feb 2023",
+      //   websiteLink: "https://slingshotahead.com/",
+      // },
     ],
   },
   education: {

@@ -34,6 +34,7 @@ const personLd = {
   url: siteUrl,
   image: PROFILE_PIC,
   jobTitle: data.title,
+  worksFor: { "@type": "Organization", name: "Clinsight AI", url: "https://clinsight.ai/" },
   email: `mailto:${data.social.email}`,
   alumniOf: { "@type": "CollegeOrUniversity", name: data.education.school },
   knowsAbout: data.skills.flatMap((s) => s.items),

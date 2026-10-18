@@ -138,27 +138,12 @@ const data = {
       websiteLink: "https://sensai.thisisyashgarg.com/",
     },
     {
-      title: "Typu",
-      description:
-        "A simple tool to generate TypeScript types from cURL commands.",
-      tags: ["react", "tailwindcss", "typescript"],
-      codeLink: "https://github.com/thisisyashgarg/typu",
-      websiteLink: "https://typu.vercel.app/",
-    },
-    {
       title: "Haunted Attic",
       description: "A two-player online escape room for macOS and Windows. Two computers, one voice call, one way out.",
       tags: ["game", "multiplayer"],
       codeLink: "",
       websiteLink: "https://github.com/thisisyashgarg/two-keys-releases/releases/latest",
       websiteLabel: "Download",
-    },
-    {
-      title: "Uber Expense Automation",
-      description: "Extracts expense data from Uber receipt PDFs into CSV or Google Sheets, with a Streamlit UI and a cron sync from Google Drive.",
-      tags: ["python", "streamlit", "google-sheets-api"],
-      codeLink: "https://github.com/thisisyashgarg/expense-sheet-creator",
-      websiteLink: "https://uber-expense-tracker.streamlit.app/",
     },
     // {
     //   title: "UnQueue",

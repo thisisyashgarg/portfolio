@@ -130,6 +130,14 @@ const data = {
   ],
   projects: [
     {
+      title: "Sensai",
+      description:
+        "An AI paper-trading simulator for Indian stocks. Import your holdings, give the AI a budget and a time window, and it researches NSE stocks and ETFs, proposes an editable plan with sources for every trade, then paper-trades a virtual copy and grades itself against buy-and-hold and the Nifty 50.",
+      tags: ["nextjs", "cloudflare-workers", "hono", "d1", "ai-sdk"],
+      codeLink: "",
+      websiteLink: "https://sensai.thisisyashgarg.com/",
+    },
+    {
       title: "Typu",
       description:
         "A simple tool to generate TypeScript types from cURL commands.",

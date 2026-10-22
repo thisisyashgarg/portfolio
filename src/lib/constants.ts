@@ -153,8 +153,7 @@ const data = {
       description: "A two-player online escape room for macOS and Windows. Two computers, one voice call, one way out.",
       tags: ["game", "multiplayer"],
       codeLink: "",
-      websiteLink: "https://github.com/thisisyashgarg/two-keys-releases/releases/latest",
-      websiteLabel: "Download",
+      websiteLink: "https://two-keys.thisisyashgarg.workers.dev",
     },
     // {
     //   title: "UnQueue",

@@ -1,7 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import data from "@/src/lib/constants";
 
-type Project = (typeof data.projects)[number] & { websiteLabel?: string };
+type Project = (typeof data.projects)[number] & { websiteLabel?: string; logo?: string };
 
 export default function Projects() {
   const projects: Project[] = data.projects;
@@ -23,7 +24,12 @@ export default function Projects() {
                 wide ? "md:col-span-2" : ""
               }`}
             >
-              <h3 className={`font-medium tracking-tight ${featured ? "text-3xl" : "text-2xl"}`}>{p.title}</h3>
+              <div className="flex items-center gap-4">
+                {p.logo && (
+                  <Image src={p.logo} alt="" width={featured ? 56 : 48} height={featured ? 56 : 48} className={`shrink-0 rounded-xl ring-1 ring-line ${featured ? "size-14" : "size-12"}`} />
+                )}
+                <h3 className={`font-medium tracking-tight ${featured ? "text-3xl" : "text-2xl"}`}>{p.title}</h3>
+              </div>
               <p className="max-w-[60ch] leading-relaxed text-muted">{p.description}</p>
               <p className="font-mono text-xs text-muted">{p.tags.join(" / ")}</p>
               <div className="mt-auto flex gap-6 pt-2 text-sm font-medium">

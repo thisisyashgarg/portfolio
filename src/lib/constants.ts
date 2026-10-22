@@ -131,6 +131,7 @@ const data = {
   projects: [
     {
       title: "MakeDecks",
+      logo: "/projects/makedecks.png",
       description:
         "A free AI presentation maker. Drop in notes, PDFs, Word or Excel files, old decks, links or YouTube videos, answer a few follow-up questions, and Gemini builds a designed deck you can edit in the browser, refine with Ask AI, share or present, then download as an editable PowerPoint or PDF.",
       tags: ["nextjs", "cloudflare-workers", "hono", "d1", "gemini"],
@@ -139,6 +140,7 @@ const data = {
     },
     {
       title: "Sensai",
+      logo: "/projects/sensai.png",
       description:
         "An AI paper-trading simulator for Indian stocks. Import your holdings, give the AI a budget and a time window, and it researches NSE stocks and ETFs, proposes an editable plan with sources for every trade, then paper-trades a virtual copy and grades itself against buy-and-hold and the Nifty 50.",
       tags: ["nextjs", "cloudflare-workers", "hono", "d1", "ai-sdk"],
@@ -147,6 +149,7 @@ const data = {
     },
     {
       title: "Haunted Attic",
+      logo: "/projects/haunted-attic.png",
       description: "A two-player online escape room for macOS and Windows. Two computers, one voice call, one way out.",
       tags: ["game", "multiplayer"],
       codeLink: "",

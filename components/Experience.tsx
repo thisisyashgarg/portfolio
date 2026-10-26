@@ -1,56 +1,57 @@
-import { ArrowUpRight, Plus } from "lucide-react";
-import data from "@/src/lib/constants";
+import { ArrowUpRight } from "lucide-react";
+import data, { RESUME_LINK } from "@/src/lib/constants";
+
+function years(tenure: string) {
+  const [start, end] = tenure.match(/\d{4}/g) ?? [];
+  if (/present/i.test(tenure)) return `${start} – Now`;
+  return end === start ? start : `${start} – ${end}`;
+}
 
 export default function Experience() {
   return (
-    <section id="experience" className="mx-auto max-w-7xl px-4 py-24 sm:px-6 md:py-32 lg:px-8">
-      <div className="grid gap-10 lg:grid-cols-12">
-        <div className="reveal lg:sticky lg:top-28 lg:col-span-4 lg:self-start">
-          <h2 className="text-4xl font-semibold tracking-tighter md:text-5xl">Experience</h2>
-          <div className="mt-8 space-y-4 text-sm leading-relaxed text-muted">
-            <p>
-              <span className="block font-medium text-foreground">{data.education.degree}</span>
-              {data.education.school}, {data.education.years}
-            </p>
-            {data.awards.map((a) => (
-              <p key={a} className="font-medium text-foreground">
-                {a}
-              </p>
-            ))}
-          </div>
-        </div>
-
-        <div className="border-t border-line lg:col-span-8">
-          {data.experience.companies.map((c, i) => (
-            <details key={c.name} open={i === 0} className="reveal group border-b border-line">
-              <summary className="flex cursor-pointer list-none flex-col gap-1 py-6 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6 [&::-webkit-details-marker]:hidden">
-                <span className="company">
-                  <span className="block text-2xl font-medium tracking-tight">{c.name}</span>
-                  {c.role && <span className="mt-1 block text-sm text-muted">{c.role}</span>}
-                </span>
-                <span className="flex items-center gap-4 font-mono text-sm text-muted">
-                  {c.tenure}
-                  <Plus size={18} strokeWidth={1.5} className="shrink-0 transition-transform group-open:rotate-45" />
-                </span>
+    <section className="hero-in mt-16 [--i:2]">
+      <h2 className="mb-4 text-muted">Work</h2>
+      <ul className="-mx-3">
+        {data.experience.companies.map((c) => (
+          <li key={c.name}>
+            <details className="group rounded-lg open:bg-surface">
+              <summary className="flex cursor-pointer list-none items-baseline gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-surface [&::-webkit-details-marker]:hidden">
+                <span className="shrink-0 font-medium">{c.name}</span>
+                <span className="truncate text-muted">{c.role}</span>
+                <span className="leader" aria-hidden />
+                <span className="shrink-0 font-mono text-xs tabular-nums text-muted">{years(c.tenure)}</span>
               </summary>
-              <ul className="max-w-[65ch] list-disc space-y-3 pb-6 pl-5 leading-relaxed text-muted marker:text-brand">
-                {c.description.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
-              <a
-                href={c.websiteLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mb-8 inline-flex items-center gap-1 text-sm font-medium hover:text-brand"
-              >
-                {c.websiteLink.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
-                <ArrowUpRight size={16} strokeWidth={1.5} className="arrow" />
-              </a>
+              <div className="px-3 pb-4 pt-1">
+                <ul className="list-disc space-y-2 pl-4 text-sm text-muted marker:text-line">
+                  {c.description.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+                <div className="mt-4 flex flex-wrap items-baseline justify-between gap-2 text-xs">
+                  <span className="font-mono text-muted">{c.stack.join(" · ")}</span>
+                  <a
+                    href={c.websiteLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-event="experience_link_clicked"
+                    data-company={c.name}
+                    className="inline-flex items-center gap-0.5 font-medium hover:text-brand"
+                  >
+                    {c.websiteLink.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
+                    <ArrowUpRight size={14} strokeWidth={1.5} className="arrow" />
+                  </a>
+                </div>
+              </div>
             </details>
-          ))}
-        </div>
-      </div>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-4 text-sm text-muted">
+        {data.education.degree}, {data.education.school.split(",")[0]}. {data.awards.join(". ")}.{" "}
+        <a href={RESUME_LINK} target="_blank" rel="noopener noreferrer" data-event="resume_clicked" className="link">
+          Full résumé
+        </a>
+      </p>
     </section>
   );
 }

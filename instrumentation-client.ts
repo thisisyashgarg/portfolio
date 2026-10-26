@@ -1,0 +1,17 @@
+import posthog from "posthog-js";
+
+const key = process.env.NEXT_PUBLIC_POSTHOG_KEY;
+
+if (key) {
+  posthog.init(key, {
+    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "https://us.i.posthog.com",
+    defaults: "2026-08-30",
+  });
+
+  document.addEventListener("click", (e) => {
+    const el = (e.target as Element).closest<HTMLElement>("[data-event]");
+    if (!el?.dataset.event) return;
+    const { event, ...props } = el.dataset;
+    posthog.capture(event, props);
+  });
+}

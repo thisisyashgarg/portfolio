@@ -1,21 +1,54 @@
-import { ArrowUpRight } from "lucide-react";
+"use client";
+
+import { useState } from "react";
+import posthog from "posthog-js";
 import data from "@/src/lib/constants";
 
+const socials = [
+  { href: data.social.github, label: "GitHub" },
+  { href: data.social.linkedin, label: "LinkedIn" },
+  { href: data.social.twitter, label: "Twitter" },
+];
+
 export default function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  function copyEmail() {
+    posthog.capture("email_copied");
+    navigator.clipboard.writeText(data.social.email).then(
+      () => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      },
+      () => (location.href = `mailto:${data.social.email}`),
+    );
+  }
+
   return (
-    <section id="contact" className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 md:pb-32 lg:px-8">
-      <div className="reveal rounded-xl bg-surface px-6 py-16 md:px-16 md:py-24">
-        <h2 className="max-w-[14ch] text-4xl font-semibold leading-[1.05] tracking-tighter md:text-6xl">
-          Let&apos;s work together.
-        </h2>
-        <a
-          href={`mailto:${data.social.email}`}
-          className="mt-10 inline-flex items-center gap-2 break-all text-xl font-medium text-brand md:text-3xl"
-        >
-          <span className="underline-grow pb-1">{data.social.email}</span>
-          <ArrowUpRight className="arrow shrink-0" size={28} strokeWidth={1.5} />
-        </a>
-      </div>
-    </section>
+    <footer className="hero-in mt-16 [--i:4]">
+      <h2 className="mb-4 text-muted">Contact</h2>
+      <p className="text-muted">
+        Reach me by{" "}
+        <button onClick={copyEmail} className="link">
+          <span aria-live="polite">{copied ? "copied!" : "email"}</span>
+        </button>
+        {socials.map((s, i) => (
+          <span key={s.label}>
+            {i === socials.length - 1 ? ", or " : ", "}
+            <a
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-event="social_clicked"
+              data-network={s.label}
+              className="link"
+            >
+              {s.label}
+            </a>
+          </span>
+        ))}
+        .
+      </p>
+    </footer>
   );
 }

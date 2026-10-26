@@ -38,7 +38,6 @@
 }
 
 html {
-  scroll-padding-top: 5rem;
   color-scheme: light dark;
 }
 
@@ -57,13 +56,23 @@ body {
   outline-offset: 3px;
 }
 
-.underline-grow {
-  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+.leader {
+  flex: 1;
+  min-width: 1rem;
+  border-bottom: 1px dotted var(--line);
+  transform: translateY(-0.3em);
 }
 
-.underline-grow:hover,
-a:hover > .underline-grow {
-  background-size: 100% 1px;
+.link {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s;
+}
+
+.link:hover {
+  text-decoration-color: currentColor;
 }
 
 details::details-content {
@@ -75,21 +84,9 @@ details::details-content {
     interpolate-size: allow-keywords;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   .hero-in {
-    animation: rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
-    animation-delay: calc(var(--i, 0) * 90ms);
-  }
-
-  .hero-photo img {
-    animation: settle 1.6s cubic-bezier(0.16, 1, 0.3, 1) both;
-  }
-
-  .underline-grow {
-    transition: background-size 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.15s;
+    animation: rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: calc(var(--i, 0) * 80ms);
   }
 
   .arrow {
@@ -100,58 +97,19 @@ details::details-content {
     transform: translate(2px, -2px);
   }
 
-  a:hover .arrow-down {
-    transform: translate(2px, 2px);
-  }
-
   details::details-content {
     height: 0;
-    transition: height 0.5s cubic-bezier(0.16, 1, 0.3, 1), content-visibility 0.5s allow-discrete;
+    transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1), content-visibility 0.4s allow-discrete;
   }
 
   details[open]::details-content {
     height: auto;
-  }
-
-  summary .company {
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  summary:hover .company {
-    transform: translateX(6px);
-  }
-
-  @supports (animation-timeline: view()) {
-    .reveal {
-      animation: rise linear both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 60%;
-    }
-
-    .nav-bar {
-      animation: nav-solid linear both;
-      animation-timeline: scroll();
-      animation-range: 0 120px;
-    }
   }
 }
 
 @keyframes rise {
   from {
     opacity: 0;
-    transform: translateY(24px);
-  }
-}
-
-@keyframes settle {
-  from {
-    transform: scale(1.08);
-  }
-}
-
-@keyframes nav-solid {
-  from {
-    background-color: transparent;
-    border-color: transparent;
+    transform: translateY(8px);
   }
 }

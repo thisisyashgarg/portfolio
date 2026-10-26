@@ -2,57 +2,29 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import data from "@/src/lib/constants";
 
-type Project = (typeof data.projects)[number] & { websiteLabel?: string; logo?: string };
-
 export default function Projects() {
-  const projects: Project[] = data.projects;
-
   return (
-    <section id="projects" className="mx-auto max-w-7xl px-4 py-24 sm:px-6 md:py-32 lg:px-8">
-      <h2 className="reveal text-4xl font-semibold tracking-tighter md:text-5xl">Projects</h2>
-
-      <div className="mt-12 grid gap-6 md:grid-cols-2">
-        {projects.map((p, i) => {
-          const featured = i === 0;
-          // first spans 2 cols; when the rest is odd, the last spans too so the grid never leaves a gap
-          const wide = featured || (i === projects.length - 1 && projects.length % 2 === 0);
-
-          return (
-            <article
-              key={p.title}
-              className={`reveal flex flex-col gap-4 rounded-xl border border-line bg-surface p-6 transition-colors duration-500 hover:border-muted/50 md:p-8 ${
-                wide ? "md:col-span-2" : ""
-              }`}
+    <section className="hero-in mt-16 [--i:3]">
+      <h2 className="mb-4 text-muted">Projects</h2>
+      <ul className="-mx-3">
+        {data.projects.map((p) => (
+          <li key={p.title}>
+            <a
+              href={p.websiteLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-event="project_link_clicked"
+              data-project={p.title}
+              className="group flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-surface"
             >
-              <div className="flex items-center gap-4">
-                {p.logo && (
-                  <Image src={p.logo} alt="" width={featured ? 56 : 48} height={featured ? 56 : 48} className={`shrink-0 rounded-xl ring-1 ring-line ${featured ? "size-14" : "size-12"}`} />
-                )}
-                <h3 className={`font-medium tracking-tight ${featured ? "text-3xl" : "text-2xl"}`}>{p.title}</h3>
-              </div>
-              <p className="max-w-[60ch] leading-relaxed text-muted">{p.description}</p>
-              <p className="font-mono text-xs text-muted">{p.tags.join(" / ")}</p>
-              <div className="mt-auto flex gap-6 pt-2 text-sm font-medium">
-                {p.websiteLink && <ProjectLink href={p.websiteLink} label={p.websiteLabel ?? "Live"} />}
-                {p.codeLink && <ProjectLink href={p.codeLink} label="Code" />}
-              </div>
-            </article>
-          );
-        })}
-      </div>
+              <Image src={p.logo} alt="" width={28} height={28} className="size-7 shrink-0 rounded-md ring-1 ring-line" />
+              <span className="shrink-0 font-medium">{p.title}</span>
+              <span className="truncate text-muted">{p.blurb}</span>
+              <ArrowUpRight size={16} strokeWidth={1.5} className="arrow ml-auto shrink-0 text-muted group-hover:text-foreground" />
+            </a>
+          </li>
+        ))}
+      </ul>
     </section>
-  );
-}
-
-function ProjectLink({ href, label }: { href: string; label: string }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-1 transition-colors hover:text-brand"
-    >
-      {label} <ArrowUpRight size={16} strokeWidth={1.5} className="arrow" />
-    </a>
   );
 }

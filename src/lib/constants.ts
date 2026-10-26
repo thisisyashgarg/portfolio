@@ -12,11 +12,11 @@ const data = {
     twitter: "https://twitter.com/thisisyashgargg",
     email: "thisisyashgarg@gmail.com",
   },
-  about: {
-    title: "My Background",
-    description:
-      "I'm a B.Tech (Information Technology) graduate who loves building things. My passion for creating projects from scratch drives me to stay current with the latest technologies and to tackle projects of any size or complexity.",
-  },
+  about: [
+    "I'm a full stack engineer who likes taking products from a blank repo to paying users. Most of my work sits between a Next.js or React Native frontend and a TypeScript backend.",
+    "I lead engineering at Clinsight AI, building ClinAds, an AI marketing platform for healthcare clinics. Before that I shipped subscriptions at Youe, pricing signals at ZZAZZ, and search at Hiretal.",
+    "Outside work I ship side projects like MakeDecks and Sensai.",
+  ],
   experience: {
     title: "My Experience",
     companies: [
@@ -30,6 +30,7 @@ const data = {
           "Wrote a 24/7 multi-site auto-indexer for Google's Indexing API covering ~615k URLs, with PostHog analytics and Sentry monitoring across services.",
         ],
         tenure: "May 2026 - Present",
+        stack: ["Next.js", "Express", "Prisma", "Zod", "Cloudflare", "PostHog", "Sentry"],
         websiteLink: "https://clinsight.ai/",
       },
       {
@@ -41,6 +42,7 @@ const data = {
           "Contributed to TTS-integrated content creation tool; processed alignment JSON leveraging ElevenLabs for speech synthesis; implemented O(1) time complexity word lookup using a time-bucket algorithm for efficient timestamp-to-word mapping.",
         ],
         tenure: "Sept 2025 - March 2026",
+        stack: ["AMP", "Chrome Extensions", "ElevenLabs", "TypeScript"],
         websiteLink: "https://zzazz.com/",
       },
       {
@@ -53,6 +55,7 @@ const data = {
           "Developed scalable frontend architecture using React Native, Next.js, and Zustand, shipping 20+ screens and 100+ reusable UI components with Mixpanel and PostHog analytics.",
         ],
         tenure: "Nov 2024 - Sept 2025",
+        stack: ["React Native", "Next.js", "Zustand", "RevenueCat", "PostHog"],
         websiteLink: "https://youe.co/",
       },
       {
@@ -66,6 +69,7 @@ const data = {
           "The platform runs on Next.js for the front end and AWS Amplify to manage the backend, making it a reliable and efficient solution for patent filing."
         ],
         tenure: "Mar 2024 - Oct 2024",
+        stack: ["Next.js", "Firebase", "AWS Amplify"],
         websiteLink: "https://app.dev.patent.ninja/",
       },
       {
@@ -78,6 +82,7 @@ const data = {
           "Integrated People Data Labs API for candidate collection and bulk/single enrichment, hydrating profiles with emails, phone numbers, URLs, certifications, and work histories; built credit-based usage-metering system.",
         ],
         tenure: "Aug 2023 - May 2024",
+        stack: ["Next.js", "Express", "TypeORM", "PostgreSQL", "Elasticsearch"],
         websiteLink: "https://hiretal.ai/",
       },
       {
@@ -90,6 +95,7 @@ const data = {
           "Built modular component library with form controls, custom toast system, collapsible sidebar with Framer Motion, and drag-and-drop proof-of-work reordering, standardizing UX across 15+ forms and feature verticals.",
         ],
         tenure: "June 2023 - May 2024",
+        stack: ["React", "React Query", "Zod", "Framer Motion"],
         websiteLink: "https://www.bluelearn.in/",
       },
       // {
@@ -131,6 +137,7 @@ const data = {
   projects: [
     {
       title: "MakeDecks",
+      blurb: "AI presentation maker",
       logo: "/projects/makedecks.png",
       description:
         "A free AI presentation maker. Drop in notes, PDFs, Word or Excel files, old decks, links or YouTube videos, answer a few follow-up questions, and Gemini builds a designed deck you can edit in the browser, refine with Ask AI, share or present, then download as an editable PowerPoint or PDF.",
@@ -140,6 +147,7 @@ const data = {
     },
     {
       title: "Sensai",
+      blurb: "AI paper trading for Indian stocks",
       logo: "/projects/sensai.png",
       description:
         "An AI paper-trading simulator for Indian stocks. Import your holdings, give the AI a budget and a time window, and it researches NSE stocks and ETFs, proposes an editable plan with sources for every trade, then paper-trades a virtual copy and grades itself against buy-and-hold and the Nifty 50.",
@@ -149,6 +157,7 @@ const data = {
     },
     {
       title: "Haunted Attic",
+      blurb: "Two-player online escape room",
       logo: "/projects/haunted-attic.png",
       description: "A two-player online escape room for macOS and Windows. Two computers, one voice call, one way out.",
       tags: ["game", "multiplayer"],

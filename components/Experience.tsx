@@ -16,8 +16,10 @@ export default function Experience() {
           <li key={c.name}>
             <details className="group rounded-lg open:bg-surface">
               <summary className="flex cursor-pointer list-none items-baseline gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-surface [&::-webkit-details-marker]:hidden">
-                <span className="shrink-0 font-medium">{c.name}</span>
-                <span className="truncate text-muted">{c.role}</span>
+                <span className="flex min-w-0 flex-col sm:flex-row sm:items-baseline sm:gap-3">
+                  <span className="shrink-0 font-medium">{c.name}</span>
+                  <span className="text-sm text-muted sm:truncate sm:text-[15px]">{c.role}</span>
+                </span>
                 <span className="leader" aria-hidden />
                 <span className="shrink-0 font-mono text-xs tabular-nums text-muted">{years(c.tenure)}</span>
               </summary>

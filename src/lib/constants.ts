@@ -13,9 +13,7 @@ const data = {
     email: "thisisyashgarg@gmail.com",
   },
   about: [
-    "I'm a full stack engineer who likes taking products from a blank repo to paying users. Most of my work sits between a Next.js or React Native frontend and a TypeScript backend.",
-    "I lead engineering at Clinsight AI, building ClinAds, an AI marketing platform for healthcare clinics. Before that I shipped subscriptions at Youe, pricing signals at ZZAZZ, and search at Hiretal.",
-    "Outside work I ship side projects like MakeDecks and Sensai.",
+    "I build web products, from blank repo to paying users. Currently building ClinAds, an AI marketing platform for clinics.",
   ],
   experience: {
     title: "My Experience",

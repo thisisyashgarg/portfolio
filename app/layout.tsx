@@ -9,7 +9,7 @@ const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 const siteUrl = "https://thisisyashgarg.com";
 const title = "Yash Garg | Full Stack Developer";
 const description =
-  "Yash Garg is a full stack developer building web and mobile products with Next.js, React Native and TypeScript for early-stage startups.";
+  "Yash Garg is a full stack developer building web products with Next.js and TypeScript for early-stage startups.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

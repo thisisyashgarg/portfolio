@@ -10,6 +10,7 @@ const data = {
     github: "https://github.com/thisisyashgarg",
     linkedin: "https://linkedin.com/in/thisisyashgarg",
     twitter: "https://twitter.com/thisisyashgargg",
+    medium: "https://medium.com/@thisisyashgarg",
     email: "thisisyashgarg@gmail.com",
   },
   about: [

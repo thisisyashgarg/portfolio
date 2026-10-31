@@ -8,6 +8,7 @@ const socials = [
   { href: data.social.github, label: "GitHub" },
   { href: data.social.linkedin, label: "LinkedIn" },
   { href: data.social.twitter, label: "Twitter" },
+  { href: data.social.medium, label: "Medium" },
 ];
 
 export default function Contact() {

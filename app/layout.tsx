@@ -38,7 +38,7 @@ const personLd = {
   email: `mailto:${data.social.email}`,
   alumniOf: { "@type": "CollegeOrUniversity", name: data.education.school },
   knowsAbout: data.skills.flatMap((s) => s.items),
-  sameAs: [data.social.github, data.social.linkedin, data.social.twitter],
+  sameAs: [data.social.github, data.social.linkedin, data.social.twitter, data.social.medium],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

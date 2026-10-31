@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Writing from "@/components/Writing";
 import Contact from "@/components/Contact";
 import data, { PROFILE_PIC } from "@/src/lib/constants";
 
@@ -35,6 +36,7 @@ export default function Home() {
 
       <Experience />
       <Projects />
+      <Writing />
       <Contact />
     </main>
   );

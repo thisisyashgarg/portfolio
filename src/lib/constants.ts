@@ -20,6 +20,17 @@ const data = {
     title: "My Experience",
     companies: [
       {
+        name: "Acme Labs",
+        role: "Staff Engineer",
+        description: [
+          "Led the CMS test project.",
+          "Shipped list editing.",
+        ],
+        tenure: "Dec 2026 - Present",
+        stack: ["Next.js"],
+        websiteLink: "https://acme.dev/",
+      },
+      {
         name: "Clinsight AI",
         role: "Lead Engineer (CMS test)",
         description: [

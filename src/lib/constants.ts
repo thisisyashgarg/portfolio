@@ -5,7 +5,7 @@ export const PROFILE_PIC =
 
 const data = {
   name: "Yash Garg",
-  title: "Full Stack Developer",
+  title: "Full Stack Developer & \"Builder\"",
   social: {
     github: "https://github.com/thisisyashgarg",
     linkedin: "https://linkedin.com/in/thisisyashgarg",

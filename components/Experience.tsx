@@ -10,7 +10,7 @@ function years(tenure: string) {
 export default function Experience() {
   return (
     <section className="hero-in mt-16 [--i:2]">
-      <h2 className="mb-4 text-muted">Work</h2>
+      <h2 className="mb-4 text-muted">Work history</h2>
       <ul className="-mx-3">
         {data.experience.companies.map((c) => (
           <li key={c.name}>

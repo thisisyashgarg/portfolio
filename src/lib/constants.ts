@@ -21,7 +21,7 @@ const data = {
     companies: [
       {
         name: "Clinsight AI",
-        role: "Lead Engineer",
+        role: "Lead Engineer (CMS test)",
         description: [
           "Building ClinAds, an AI marketing platform for healthcare clinics, across a Next.js frontend and an Express, Prisma and Zod backend deployed on Cloudflare.",
           "Shipped AI ad generation, website analysis, AI visibility tracking across ChatGPT, Claude and Gemini, competitor analysis, and a credit-metered customer API with OpenAPI docs.",

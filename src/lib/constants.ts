@@ -136,6 +136,16 @@ const data = {
   ],
   projects: [
     {
+      title: "TurnIntoCMS",
+      blurb: "Turn the site you coded into a CMS",
+      logo: "/projects/turnintocms.png",
+      description:
+        "Connect the GitHub repo you already have and your coded site becomes a CMS. No rebuild on another CMS platform, no monthly plan. Clients edit the live page and every change is a Git commit.",
+      tags: ["cms", "github"],
+      codeLink: "",
+      websiteLink: "https://turnintocms.com/",
+    },
+    {
       title: "MakeDecks",
       blurb: "AI presentation maker",
       logo: "/projects/makedecks.png",

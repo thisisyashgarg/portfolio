@@ -17,7 +17,7 @@ export default function Projects() {
               data-project={p.title}
               className="group flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-surface"
             >
-              <Image src={p.logo} alt="" width={28} height={28} className="size-7 shrink-0 rounded-md ring-1 ring-line" />
+              <Image src={p.logo} alt={`${p.title} logo`} width={28} height={28} className="size-7 shrink-0 rounded-md ring-1 ring-line" />
               <span className="flex min-w-0 flex-col sm:flex-row sm:items-baseline sm:gap-3">
                 <span className="shrink-0 font-medium">{p.title}</span>
                 <span className="text-sm text-muted sm:truncate sm:text-[15px]">{p.blurb}</span>

@@ -37,7 +37,7 @@ export default function Experience() {
                     rel="noopener noreferrer"
                     data-event="experience_link_clicked"
                     data-company={c.name}
-                    className="inline-flex items-center gap-0.5 font-medium hover:text-brand"
+                    className="-my-1 inline-flex items-center gap-0.5 py-1 font-medium hover:text-brand"
                   >
                     {c.websiteLink.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
                     <ArrowUpRight size={14} strokeWidth={1.5} className="arrow" />

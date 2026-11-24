@@ -1,3 +1,4 @@
+export const SITE_URL = "https://thisisyashgarg.com";
 export const RESUME_LINK =
   "https://thisisyashgarg.github.io/resume.pdf";
 export const PROFILE_PIC =
